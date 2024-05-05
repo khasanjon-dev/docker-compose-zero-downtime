@@ -14,4 +14,4 @@ class NewsModelViewSet(ModelViewSet):
 
     @action(['get'], False, serializer_class=NoneSerializer)
     def counter(self, request):
-        return Response({'id': socket.gethostname()})
+        return Response({'id': 'HI guys'})
